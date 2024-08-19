@@ -6,6 +6,6 @@ const port = 3000
   res.send ( 'Hello World!' ) 
 }) 
 
-app.Listen (port, () => { 
+app.listen (port, () => { 
   console.log ( `Пример приложения, прослушивающего порт ${port} ` ) 
 })
