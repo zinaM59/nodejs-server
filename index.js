@@ -5,7 +5,9 @@ const port = 3000
  app.get ( '/', ( req, res ) => { 
   res.send ( 'Hello World!' ) 
 }) 
-
+app.get('/api', (req, res) => {
+  res.send('Hello World! Good Night')
+})
 app.listen (port, () => { 
-  console.log ( `Пример приложения, прослушивающего порт ${port} ` ) 
+  console.log ( `Example app listening on port ${port} ` ) 
 })
